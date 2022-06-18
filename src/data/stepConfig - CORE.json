@@ -1,0 +1,25 @@
+{
+	"Title": "Nombre del Despliegue",
+	"TimeExecution": "13:40",
+	"Steps": [
+		{
+			"StepId": "1",
+			"StepName": "Stop Service",
+			"StepType": "ZIP",
+			"StepCode": "{\"NameFileZipResult\":\"NuevoFOLDERZip.zip\",\"Source\":\"C:\\\\CEN\\\\XML\",\"Destination\":\"C:\\\\RPDEployer_backups\"}"
+			
+			, "StepCode_CMD": "taskkill /im calculator.exe /f"
+			, "StepCode_COPY_FOLDER": "{\"Source\":\"C:\\\\CEN\\\\XML\",\"Destination\":\"C:\\\\RPDEployer_backups\"}"
+			, "StepCode_COPY_FILE": "{\"Source\":\"C:\\cen\\logo.png\",\"Destination\":\"C:\\RPDEployer_backups\"}"
+			, "StepCode_ZIP_FILE": "{\"NameFileZipResult\":\"NuevoZip.zip\",\"Source\":\"C:\\\\CEN\\\\XML\\\\miPrimerXML.xml\",\"Destination\":\"C:\\\\RPDEployer_backups\"}"
+			, "StepCode_ZIP_FOLDER": "{\"NameFileZipResult\":\"NuevoFOLDERZip.zip\",\"Source\":\"C:\\\\CEN\\\\XML\",\"Destination\":\"C:\\\\RPDEployer_backups\"}"
+			, "StepCode_UNZIP": "{\"PathFileZip\":\"C:\\\\RPDEployer_backups\\\\paraDezipar.zip\",\"Destination\":\"C:\\\\RPDEployer_backups\\\\ParaDezipar\"}"
+		}
+	],
+	"MailNotification": [
+		{
+			"Name": "Roberto Prado",
+			"Mail": "roberto.prado23@hotmail.com"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RP.Deployer.Commons\RP.Deployer.Commons.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RP.Framework">
+      <HintPath>..\..\..\lib\RP.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
